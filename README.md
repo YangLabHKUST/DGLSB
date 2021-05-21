@@ -1,5 +1,5 @@
 # Deep Generative Learning via Schrödinger Bridge
-Official code for ICML 2021 paper Deep Generative Learning via Schrödinger Bridge.
+Official code for ICML 2021 paper Deep Generative Learning via Schrödinger Bridge, by Gefei Wang, Yuling Jiao, Qian Xu, Yang Wang and Can Yang.
 
 ## Run Experiments
 ### Training
