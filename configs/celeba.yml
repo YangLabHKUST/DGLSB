@@ -1,0 +1,50 @@
+data:
+    dataset: "CELEBA"
+    image_size: 64
+    channels: 3
+    rescaled: true
+    num_workers: 4
+
+image_mean: "./image_mean/image_mean_celeba.npy"
+
+model:
+    in_channels: 3
+    out_ch: 3
+    ch: 128
+    ch_mult: [1, 2, 2, 2, 4]
+    num_res_blocks: 2
+    attn_resolutions: [16, ]
+    dropout: 0.1
+    ema: True
+    ema_rate: 0.9999
+    resamp_with_conv: True
+    ngf_d: 128
+
+training:
+    batch_size: 64
+    n_epochs_d: 1000
+    n_iters_d: 60000
+    n_epochs: 10000
+    n_iters: 200000
+    snapshot_freq: 100000
+
+sampling:
+    batch_size: 100
+    last_only: True
+    total_n_samples: 50000
+    ckpt_id: 200000
+
+optim:
+    weight_decay: 0.000
+    optimizer: "Adam"
+    lr: 0.0002
+    beta1: 0.9
+    amsgrad: false
+    eps: 0.00000001
+    grad_clip: 1.0
+
+optim_d:
+    weight_decay: 1.0
+    lr: 0.00001
+    beta1: 0.5
+    beta2: 0.999
