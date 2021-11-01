@@ -30,3 +30,19 @@ Please contact Gefei (gwangas@connect.ust.hk), Yuling (yulingjiaomath@whu.edu.cn
 
 ## Reference and Acknowledgements
 This implementation is based on https://github.com/ermongroup/ddim.
+
+## Citation
+```
+@InProceedings{pmlr-v139-wang21l,
+  title = 	 {Deep Generative Learning via Schr{ö}dinger Bridge},
+  author =       {Wang, Gefei and Jiao, Yuling and Xu, Qian and Wang, Yang and Yang, Can},
+  booktitle = 	 {Proceedings of the 38th International Conference on Machine Learning},
+  pages = 	 {10794--10804},
+  year = 	 {2021},
+  editor = 	 {Meila, Marina and Zhang, Tong},
+  volume = 	 {139},
+  series = 	 {Proceedings of Machine Learning Research},
+  month = 	 {18--24 Jul},
+  publisher =    {PMLR}
+}
+```
